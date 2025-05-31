@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Chores of the Day</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--Here Will go the title and todays date-->
+    <header>
+        <!--Here will go a tiny image-->
+        <div class="header-div">
+            <img src="./images/cat-butt.png" alt="" id="header-image">
+        </div>
+        <!--Here will go the title-->
+        <div class="header-div">
+            <input type="text" placeholder="Enter your title..." id="list-title" maxlength="50" name="list-title">
+        </div>
+        <!--Here will go the date-->
+        <div class="header-div">
+            <p id="date-list"></p>
+        </div>
+    </header>
+    <!--Here will go all to do list items-->
+    <main id="tasks-container">
+        <!--Page need to be empty, why, well, if local storage is empty, and by empty I mean no tasks are inside the list, I need to display the add next task div, otherwise, I have to display the list items and at the bottom the add next task
+        A-) I could leave this even if the list is not empty and add any new list on top, like a stack, it could work like an array.
+        B-)Have a ternary decide what to do, if items are inside the list add the add new task after evaluatinf locastorage, else, add list items and then add the next task.
+        <div>
+            <div>
+                <img id="add-task-icon" src="">
+            </div>
+            <div>
+                <p>Add new task</p>
+            </div>
+            <div>
+                <img src="" alt="cat waiting for you to add a task">
+            </div>
+        </div>-->
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
