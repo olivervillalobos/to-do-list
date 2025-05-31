@@ -8,13 +8,7 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
-}
-
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+  font-family: monospace;
 }
 
 body {
@@ -74,9 +68,6 @@ h6 {
   isolation: isolate;
 }
 /*The CSS for the To Do List*/
-*{
-    font-family: monospace;
-}
 header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -85,24 +76,23 @@ header {
 .header-div {
   height: 60px;
   display: flex;
-  align-items: end;
-
 }
 #header-image {
   height: 60px;
-  margin: 0 auto 0 20px;
+  margin: auto auto auto 20px;
 }
 #list-title {
-    margin: auto;
-    width: 100%;
-font-size: 24px;
+  margin: auto;
+  width: 100%;
+  font-size: 24px;
   border: none;
   outline: none;
   text-align: center;
 }
 #date-list {
-    width: 100%;
-    margin: auto 20px auto auto;
+  text-align: right;
+  margin: auto 20px auto auto;
+  width: 100%;
   font-size: 1rem;
 }
 .new-task{
@@ -117,7 +107,10 @@ font-size: 24px;
     transform: scale(1.01);
 }
 .new-task:active{
-    background-color: grey;
+    background-color: rgb(163, 163, 163);
+    border-width: 3px;
+    box-sizing: border-box;
+    border-style: inset;
 }
 #add-task-icon{
     height: 20px;
@@ -128,4 +121,36 @@ font-size: 24px;
 #new-task-cat{
     height: 20px;
 }
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+.task-box, .task-trash{
+  height: 20px;
+  width: 20px;
+}
+.task-box{
+
+}
+.my{
+  width: 100%;
+}
+.task-input{
+  width: 100%;
+}
+.task-trash{
+  
+}
+.task-box:hover, .task-trash:hover{
+  transform: scale(1.1);
+}
+.task-box:active, .task-trash:active{
+  border: 2px dotted black;
+}
+
 
