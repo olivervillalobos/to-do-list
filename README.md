@@ -18,9 +18,9 @@ Just open the `index.html` file in your browser — no setup or installation req
 
 ## 📸 Screenshot
 
-![Light Mode](images/light-view.png);
+<img src="./images/light-view.png" alt="Cat Chores Light View" width="350px"/>
 
-![Dark Mode](images/dark-view.png);
+<img src="./images/dark-view.png" alt="Cat Chores Dark View" width="350px"/>
 
 ## 📁 Project Structure
 📂 project-folder/
